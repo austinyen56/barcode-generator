@@ -5,7 +5,7 @@ from PIL import Image, ImageFont, ImageDraw
 # Stored in directory shown below
 def barcodegen():
     snum = 14835
-    for i in range(1):
+    for i in range(2001):
         sn = "000"+ str(snum)
         code = barcode.get("gs1_128", str(sn), writer=ImageWriter())
         code.save("D:\Python Projects\qrresults\\"+sn)
